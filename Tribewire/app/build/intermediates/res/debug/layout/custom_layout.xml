@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_layout"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="@drawable/fyi_read_60x60"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <Button
+        android:id="@+id/btn_badge_value"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/badged_30x30"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="8dp" />
+
+</RelativeLayout><!-- From: file:/H:/Tribewire/app/src/main/res/layout/custom_layout.xml -->

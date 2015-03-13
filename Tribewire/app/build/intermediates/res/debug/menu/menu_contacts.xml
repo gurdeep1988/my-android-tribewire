@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/search_40x40"
+        android:showAsAction="always|collapseActionView"
+        android:title="@string/action_search"/>
+    <item
+        android:id="@+id/btn_groups"
+        android:icon="@drawable/group_40x40"
+        android:showAsAction="always"
+        android:title="@string/action_search"/>
+
+</menu><!-- From: file:/H:/Tribewire/app/src/main/res/menu/menu_contacts.xml -->

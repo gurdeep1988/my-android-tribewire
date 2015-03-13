@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray" >
+
+    <!--
+        <include
+      layout="@layout/ads"
+      android:layout_width="fill_parent"
+      android:gravity="center"
+      android:layout_height="wrap_content"
+      android:id="@+id/adLayout"
+      android:layout_alignParentBottom="true" />
+    -->
+
+    <RelativeLayout
+        android:id="@+id/message_folderlist_header_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_bar"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/notification_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_done" >
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:text="Messages"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/message_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_folderlist_header_ll"
+        android:hint="Search"
+        android:singleLine="true" />
+
+    <View
+        android:id="@+id/viiew"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/message_search"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/lst_msg_folder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/viiew"
+        android:background="@color/white"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dip" />
+
+</RelativeLayout>

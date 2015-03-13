@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tribewire_grey" >
+
+    <RelativeLayout
+        android:id="@+id/rlt_companyFYi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lighgrey" >
+
+        <ImageView
+            android:id="@+id/img_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/fyi_unread_60x60" />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Mar 26"
+            android:textColor="@color/tribewire_grey"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/datalayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/txt_time"
+            android:layout_toRightOf="@id/img_alert"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_sender_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Susan Cross"
+                android:textColor="@color/tribewire_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Reminder!"
+                android:textColor="@color/tribewire_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Vacation Request must be approved by your supervisor atleast 2 weeks in advance. If you need request forms they can be acquired at the HR desk."
+                android:textColor="@color/tribewire_grey"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_audio1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rlt_audio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/img_audio_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/videoplay" />
+
+                    <TextView
+                        android:id="@+id/audio_seconds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="00:00"
+                        android:textColor="@color/tribewire_black"
+                        android:textSize="14dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/audio_seconds"
+                        android:layout_toRightOf="@id/img_audio_message" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/datalayout"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Reply"
+            android:textColor="@color/tribewire_grey"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

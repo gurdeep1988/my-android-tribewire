@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor" >
+
+    <LinearLayout
+        android:id="@+id/select_group__header_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_bar"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/select_group_btn_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_group1"
+            android:gravity="bottom"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/group_btndone"
+            android:layout_width="108dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/button_back_to_tiles" />
+
+        <Button
+            android:id="@+id/select_group_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/send_silver" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/select_group__header_ll"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/blue_bar"
+        android:gravity="center"
+        android:paddingRight="30dip"
+        android:text="Contacts"
+        android:textColor="#fff"
+        android:textSize="18dip"
+        android:visibility="gone" >
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/group_btnAddAll"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/select_group__header_ll"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:text="Select All"
+        android:textColor="#fff"
+        android:textSize="15dip"
+        android:visibility="gone" >
+    </CheckBox>
+
+    <!-- <ListView -->
+    <!-- android:id="@+id/select_group_list_view" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_above="@+id/select_group_footer_image" -->
+    <!-- android:layout_below="@+id/lblAdd" -->
+    <!-- android:background="@color/white" -->
+    <!-- android:divider="@drawable/list_divider" -->
+    <!-- android:dividerHeight="1dip" /> -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lblAdd" >
+
+        <LinearLayout
+            android:id="@+id/linear_layout_group"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="1dip"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/H:/Tribewire/app/src/main/res/layout/group_list_selection.xml -->

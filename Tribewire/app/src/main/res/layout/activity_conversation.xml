@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Sliding Panel -->
+
+<!--     <android.support.v4.widget.DrawerLayout -->
+<!--         xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--         android:id="@+id/drawer_layout" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" > -->
+
+<!--         Framelayout to display Fragments -->
+
+<!--         <FrameLayout -->
+<!--             android:id="@+id/frame_container" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" /> -->
+
+<!--         Listview to display slider menu -->
+
+<!--         <ListView -->
+<!--             android:id="@+id/list_slidermenu" -->
+<!--             android:layout_width="240dp" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_gravity="start" -->
+<!--             android:choiceMode="singleChoice" -->
+<!--             android:dividerHeight="1dp" /> -->
+<!--     </android.support.v4.widget.DrawerLayout> -->
+
+    <include layout="@layout/slidingpanel" />
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlt_menu_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:background="@color/blue" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp" >
+
+                <Button
+                    android:id="@+id/btn_menu"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drawer_30x30" />
+
+                <Button
+                    android:id="@+id/btn_badge"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toRightOf="@id/btn_menu"
+                    android:background="@drawable/badge_10x10"
+                    android:gravity="center_vertical"
+                    android:padding="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_static_allconv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/all_conversation"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_newmessage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/new_conversation_30x30" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/btn_newmessage"
+                android:background="@drawable/search_30x30" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_search_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txt_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_search_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/txt_search_cancel"
+                android:hint="@string/Search"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lst_msg_folder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/list_divider" >
+        </ListView>
+    </LinearLayout>
+
+</FrameLayout>

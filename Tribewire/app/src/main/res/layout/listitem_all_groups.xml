@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlt_group_bg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white" >
+
+        <ImageView
+        android:id="@+id/contact_pic"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/group"
+        android:layout_margin="5dip" >
+    </ImageView>
+        
+        <TextView
+            android:id="@+id/txt_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/contact_pic"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Test Group"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <!-- <Button -->
+        <!-- android:id="@+id/btn_plus_more" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginRight="10dp" -->
+        <!-- android:background="@drawable/plus" -->
+        <!-- android:visibility="gone" /> -->
+
+        <TextView
+            android:id="@+id/txt_group_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_remove"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@color/red"
+            android:text="Remove"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

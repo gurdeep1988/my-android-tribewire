@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="friendsmenu">
+        <item>Send message</item>
+        <item>Add to Group</item>
+    </string-array>
+
+    <string name="action_search"> Search Conversation</string>
+    <string name="action_companyFyi">New Company Fyi</string>
+    <string name="group_exist">Group name already exists</string>
+    <string name="app_name">Tribewire</string>
+    <string name="app_name_capital">TRIBEWIRE</string>
+    <string name="action_settings">Settings</string>
+    <string name="Reply"><u>Reply</u></string>
+    <string name="newgroup">NEW GROUP</string>
+    <string name="allgroup">ALL GROUPS</string>
+    <string name="Search">Search</string>
+    <string name="copyright">Copyright \u00A9 2015 Tribewire.</string>
+    <string name="all_conversation">ALL CONVERSATION</string>
+    <string name="currentconversation">CURRENT CONVERSATION</string>
+    <string name="compose_fyi">COMPOSE FYI</string>
+    <string name="company_FYI">COMPANY FYIs</string>
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="add_edit_profile_image">Add or Edit a profile image</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="new_eyesay">NEW CONVERSATION</string>
+    <string name="emergency_conversation">EMERGENCY CONVERSATION</string>
+    <string name="replytosender">REPLY TO SENDER</string>
+    <string name="password">Password  </string>
+    <string name="username">Username</string>
+    <string name="forgot_passowrd"><u>Forgot password?</u></string>
+    <string name="warning">Warning</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_connectivity">No internet connectivity</string>
+    <string name="no_group_memeber">No group member available, Click on add/edit button on top right to add group members</string>
+    <string name="no_contact">No contacts available</string>
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing…</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="msg_sent_successfully">Message Sent Successfully</string>
+    <string name="singout"><u>Sign out</u></string>
+    <!-- Temp Menu Item String -->
+    <string name="companyFyu">Company FYIs</string>
+    <string name="allConversation">All Conversations</string>
+    <string name="contacts">Contacts &amp; Groups</string>
+    <string name="Groups">Groups</string>
+    <string name="emergency">EMERGENCY!</string>
+    <string name="videos">Videos</string>
+    <string name="contactus">Contact Us</string>
+    <string name="more">More >></string>
+    <string name="loading">Loading...</string>
+    <string name="delete">Delete</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="contact_groups">CONTACTS &amp; GROUPS</string>
+
+    
+    <!-- String for compose Fyi Screen -->
+    
+    <string name="subject">Subject</string>
+    <string name="expires">Expires</string>
+    <string name="link">Link</string>
+    <string name="media">Media</string>
+    <string name="message">Message</string>
+    <string-array name="nav_item_names">
+        <item>Edit Profile</item>
+        <item>All Conversations</item>
+        <item>Company FYIs</item>
+        <item>Contacts &amp; Groups</item>
+        <item>EMERGENCY!</item>
+    </string-array>
+
+    <string-array  name="nav_icon_names">
+        <item >@drawable/drawer_allconversations_80x80</item>
+        <item >@drawable/drawer_fyis_80x80</item>
+        <item >@drawable/drawer_contacts_80x80</item>
+        <item >@drawable/emergency_msg_unread_100x100</item>
+        
+    </string-array>
+    <!-- Temp Home Screen Lower menu Items -->
+
+</resources>

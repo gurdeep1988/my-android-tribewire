@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#224c4c4c"
+    
+    android:orientation="vertical"
+    android:padding="4dip" >
+
+    <Button
+        android:id="@+id/custom_menu_item_caption"
+        style="@style/button_black"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="Add from URL" >
+    </Button>
+
+</LinearLayout><!-- From: file:/H:/Tribewire/app/src/main/res/layout/custom_menu_item.xml -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="orange">#FFCC33</color>
+    <color name="orangedark">#FF9900</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="green_user_group">#00A995</color>
+    <color name="header_color">#CCCCCC</color>
+    <color name="copyright">#003D4C</color>
+    <color name="gray">#888</color>
+    <color name="gray1">#E0E1E2</color>
+    <!-- <color name="skyblue">#07B5DD</color> -->
+    <color name="skyblue">#00A995</color>
+    
+<!--     <color name="blue">#333333</color> -->
+    <color name="blue">#00A992</color>
+    <color name="send_bar_grey">#DDDDDD</color>
+    <color name="lightblack">#2A2B30</color>
+    <color name="bgcolor">#1D9D9D</color>
+    <color name="tribewire_black">#333333</color>
+    <color name="tribewire_lightparrot">#A6FFBC</color>
+    <color name="tribewire_grey">#999999</color>
+    <color name="red">#D30323</color>
+   <color name="nav_allconversation">#003D4C</color> 
+    <color name="lighgrey">#E1E1E1</color>
+   <color name="grey_shade">#D2D2D2</color>
+    
+</resources>

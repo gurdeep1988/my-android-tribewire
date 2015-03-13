@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+     >
+
+    
+     <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:paddingLeft="5dip"
+            android:text=""
+            android:textColor="@android:color/primary_text_light" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:weightSum="1" >
+
+
+
+        <TextView
+            android:id="@+id/txtmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="5dip"
+            android:text=""
+            android:textColor="@android:color/primary_text_light" />
+                <ImageView
+            android:id="@+id/more_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center|center_vertical"
+            android:visibility="gone"
+             />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/H:/Tribewire/app/src/main/res/layout/msgreceivernew.xml -->

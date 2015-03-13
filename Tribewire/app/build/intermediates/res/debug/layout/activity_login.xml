@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/username_image"
+            android:hint="@string/username"
+            android:inputType="textVisiblePassword|textNoSuggestions"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/password_image"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:text="Sign In"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_sign_in_500x60px" />
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            
+            android:text="@string/forgot_passowrd"
+            android:textColor="@color/tribewire_lightparrot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        
+        android:orientation="vertical" >
+
+         
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+        
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/copyright"
+            android:textColor="@color/copyright"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/H:/Tribewire/app/src/main/res/layout/activity_login.xml -->

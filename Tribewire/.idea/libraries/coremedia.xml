@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="coremedia">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/coremedia.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/groupName"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/nav_allconversation"
+        android:textColor="#fff"
+        android:textSize="14dip"
+        android:textStyle="bold" >
+
+        <Button
+            android:id="@+id/btn_back_allgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_arrow_40x40" />
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="15dip"
+            android:text="Group Name"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="Select All"
+                android:textColor="#ffffff"
+                android:textSize="24dip" />
+
+            <CheckBox
+                android:id="@+id/chk_all"
+                android:layout_width="wrap_content"
+                android:layout_height="55dip"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:clickable="false"
+                android:focusable="false"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/gray1" >
+
+        <Button
+            android:id="@+id/btn_add_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/add_recipients"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/txt_group_name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@id/btn_add_member"
+            android:background="@drawable/edit_text_round"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:text="Blast Team"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lighgrey"
+        android:scrollbars="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/con_listener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/lst_group_members"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@android:color/transparent"
+        android:orientation="vertical" />
+
+</LinearLayout><!-- From: file:/H:/Tribewire/app/src/main/res/layout/activity_group_memeber.xml -->

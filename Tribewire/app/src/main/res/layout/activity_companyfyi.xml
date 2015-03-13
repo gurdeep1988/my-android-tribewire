@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlt_menu_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:background="@color/blue" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            
+            android:background="@drawable/back_arrow_30x30" />
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/company_FYI"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+        
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            
+            android:background="@drawable/search_30x30" />
+    </RelativeLayout>
+
+         <RelativeLayout
+            android:id="@+id/rlt_search_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txt_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_search_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/txt_search_cancel"
+                android:hint="Search Contact"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    <ListView
+        android:id="@+id/list_companyFyi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:divider="@drawable/list_divider" >
+    </ListView>
+
+</LinearLayout>

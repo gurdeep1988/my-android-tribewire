@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/select_contact__header_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/nav_allconversation"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/contacts_btndone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_arrow_40x40" />
+
+        <TextView
+            android:id="@+id/contact_groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/contact_groups"
+            android:textColor="@color/white" />
+
+        <Button
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/search_40x40" />
+        <Button
+            android:id="@+id/select_contacts_btn_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_cont_topbar"
+            android:gravity="bottom"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/select_contacts_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/send_silver"
+            android:visibility="gone" />
+        
+                <RelativeLayout
+            android:id="@+id/rlt_search_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/nav_allconversation"
+            android:visibility="gone" >
+<Button
+            android:id="@+id/contacts_btndone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            
+            android:background="@drawable/back_arrow_40x40" />
+                    
+            <TextView
+                android:id="@+id/txt_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_search_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                 android:layout_marginLeft="5dp"
+                 android:layout_toRightOf="@id/contacts_btndone1"
+                 android:layout_marginRight="5dp"
+                 android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/txt_search_cancel"
+                android:hint="Search Group"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/select_contact__header_ll"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/blue_bar"
+        android:gravity="center"
+        android:paddingRight="30dip"
+        android:text="Contacts"
+        android:textColor="#fff"
+        android:textSize="18dip"
+        android:visibility="gone" >
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/contacts_btnAddAll"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/select_contact__header_ll"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:text="Select All"
+        android:textColor="#fff"
+        android:textSize="15dip"
+        android:visibility="invisible" >
+    </CheckBox>
+
+    <!-- <ListView -->
+    <!-- android:id="@+id/select_contact_list_view" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_above="@+id/select_contact_footer_image" -->
+    <!-- android:layout_below="@+id/lblAdd" -->
+    <!-- android:background="@color/white" -->
+    <!-- android:divider="@drawable/list_divider" -->
+    <!-- android:dividerHeight="1dip" /> -->
+
+
+    <!-- <ScrollView -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+
+
+    <!-- android:layout_above="@+id/select_contact_footer_image" -->
+    <!-- android:layout_below="@+id/lblAdd" -->
+    <!-- > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/linear_layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:background="@color/white" -->
+    <!-- android:divider="@drawable/list_divider" -->
+    <!-- android:dividerHeight="1dip" /> -->
+    <!-- </ScrollView> -->
+
+    <com.eyesayapp.alphabetlist.IndexableListView
+        android:id="@+id/contact_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lblAdd"
+        android:background="@color/white"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dip" />
+
+</RelativeLayout><!-- From: file:/H:/Tribewire/app/src/main/res/layout/contacts_list_selection.xml -->

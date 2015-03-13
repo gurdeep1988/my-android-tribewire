@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+
+    <TextView 
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="@color/header_color"
+        android:text="A"
+        android:paddingLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        />
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+        <ImageView
+        android:id="@+id/imgstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dip"
+        android:background="@drawable/rightarrow" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/contact_pic"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dip" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/contact_pic"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:text="Hello"
+        android:textColor="@color/tribewire_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_toLeftOf="@id/imgstatus"
+        android:layout_toRightOf="@id/contact_pic"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_shade" />
+
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@color/red"
+        android:text="Remove"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+    
+</RelativeLayout>
+</LinearLayout><!-- From: file:/H:/Tribewire/app/src/main/res/layout/friendlist.xml -->

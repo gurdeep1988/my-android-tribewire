@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Starting of the Sliding Panel -->
+
+    <RelativeLayout
+        android:id="@+id/slidingpanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/con_profile_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+
+            <ImageView
+                android:id="@+id/img_profile_local"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/no_image"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Susan Cross"
+                        android:textColor="@color/tribewire_black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                     >
+
+                    <TextView
+                        android:id="@+id/txt_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status: "
+                        android:textColor="@color/tribewire_black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_status_online"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="On Mobile"
+                        android:textColor="@color/green_user_group"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        
+                        android:background="@drawable/icons_status_online" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_sign_out"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/singout"
+                    android:textColor="@color/tribewire_grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+             
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/con_allconversation"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/white"
+            android:visibility="visible" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/list_divider" />
+
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp" />
+            <!-- android:background="@drawable/allconversations_50x50" /> -->
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_icon"
+                android:text="@string/allConversation"
+                android:textColor="@color/tribewire_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btn_badge_green"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/txt_title"
+                android:background="@drawable/badge_30x30new"
+                android:gravity="center"
+                android:text="99"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </RelativeLayout>
+        
+        <TextView
+                    android:id="@+id/txtVersionNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="V0.9.05"
+                    
+                    android:textColor="@color/tribewire_grey" />
+    </RelativeLayout>
+
+</LinearLayout>

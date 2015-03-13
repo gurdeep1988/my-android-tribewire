@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/select_contact__header_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/blue_bar"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/record_audio_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/button_done"
+            android:gravity="right" />
+
+        <Button
+            android:id="@+id/record_audio_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/cancel"
+            android:gravity="right" />
+
+        <Button
+            android:id="@+id/recordvoice_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/send_silver"
+            android:gravity="right"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/record_audio_save"
+            android:layout_width="80dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/recordvoice_btn_send"
+            android:background="@drawable/button_save"
+            android:gravity="right" />
+    </RelativeLayout>
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:background="@drawable/button_chooseaudio1" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- /> -->
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_contact__header_ll"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textSize="20dip" />
+    <!--
+   <TextView
+      android:id="@+id/tv_second"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#FFFFFF"
+      android:layout_margin="20dip" android:textSize="110dip" android:text="00:29">
+   </TextView>
+    -->
+    <!--
+   <LinearLayout
+      android:layout_width="fill_parent"
+      android:gravity="center"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dip">
+      <Button
+         android:layout_margin="5dip"
+         android:id="@+id/btnStop"
+         android:textColor="#000000"
+         android:layout_marginLeft="30dip"
+         android:layout_height="wrap_content"
+         android:background="@drawable/btn_stop" android:layout_width="wrap_content"></Button>
+      <Button
+         android:layout_margin="5dip"
+         android:id="@+id/btnCancel"
+         android:textColor="#000000"
+         android:layout_marginLeft="30dip"
+         android:background="@drawable/btn_cancel2"
+         android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+   </LinearLayout>
+
+   
+      <Button
+
+      android:layout_margin="5dip"
+      android:id="@+id/btnSend"
+      android:textColor="#000000"
+      android:layout_marginLeft="30dip"
+      android:background="@drawable/btn_send"
+      android:layout_height="wrap_content" android:layout_width="wrap_content" android:visibility="invisible"></Button> 
+    -->
+
+    <RelativeLayout
+        android:id="@+id/Bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_rl" >
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="#FFFFFF"
+            android:textSize="25dip" />
+        <!--
+       <Chronometer
+            android:id="@+id/chronometer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progressBar1"
+            android:layout_alignParentLeft="true"
+            android:text="00:00"
+            android:textColor="@android:color/black" />
+        -->
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/second" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Bottom_buttons"
+        
+        
+        android:layout_below="@id/select_contact__header_ll"
+        android:background="@drawable/audiorecordingbg" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/silver_bar" >
+
+        <Button
+            android:id="@+id/btn_getStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            
+            android:background="@drawable/btn_get_start_vd" />
+
+        <!-- <Button -->
+        <!-- android:id="@+id/btn_getStop" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/btn_get_stop" -->
+        <!-- android:layout_weight="1" /> -->
+
+        <Button
+            android:id="@+id/btn_getPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:background="@drawable/videoplay" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dip"
+            android:background="@drawable/cancel_silver" />
+
+        <!-- <Button -->
+        <!-- android:id="@+id/btnSend" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/btn_get_mail" -->
+        <!-- android:layout_weight="1"/> -->
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/H:/Tribewire/app/src/main/res/layout/recordvoice.xml -->

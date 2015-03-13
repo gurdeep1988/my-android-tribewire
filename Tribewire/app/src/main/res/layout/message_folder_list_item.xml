@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rlt_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rlt_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+             >
+
+            <ImageView
+                android:id="@+id/img_user_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" >
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/rlt_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/img_user_one"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/img_user_two"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_toRightOf="@id/img_user_one"
+                    android:scaleType="centerCrop" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/img_user_three"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/img_user_one"
+                    android:scaleType="centerCrop" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/img_user_four"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/img_user_two"
+                    android:layout_toRightOf="@id/img_user_three"
+                    android:scaleType="centerCrop" >
+                </ImageView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/rlt_img1" />
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/arrow_next_24x24" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/msgCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_toLeftOf="@id/imgIcon"
+            android:text="Few Seconds ago"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/tribewire_grey"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/msgCount"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/rlt_img1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Jhoney Lopes and 2 others"
+            android:textColor="@color/tribewire_black"
+            
+            android:textSize="16sp"
+             >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/rlt_audio1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDisplay"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/rlt_img1" >
+
+            <ImageView
+                android:id="@+id/img_message"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_audio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/img_audio_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/videoplay" />
+
+                <TextView
+                    android:id="@+id/audio_seconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    
+                    android:textColor="@color/tribewire_black"
+                    android:textSize="14dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/audio_seconds"
+                    android:layout_toRightOf="@id/img_audio_message" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlt_audio1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/rlt_img1"
+              
+            android:text="Voice"
+            android:textColor="@color/tribewire_grey"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtTime" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/delete_item"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Delete"
+        android:visibility="gone" />
+
+</RelativeLayout>

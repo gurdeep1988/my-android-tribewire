@@ -1,0 +1,473 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\scopes\
+* .idea\scopes\scope_settings.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* app\
+* app\build.gradle
+* app\libs\
+* app\libs\aws-android-sdk-1.4.0-debug.jar
+* app\libs\commons-httpclient.jar
+* app\libs\commons-lang3-3.3.2.jar
+* app\libs\coremedia.jar
+* app\libs\httpmime-4.2.1.jar
+* app\libs\picasso-2.0.2.jar
+* app\src\
+* app\src\main\
+* app\src\main\AndroidManifest.xml
+* app\src\main\aidl\
+* app\src\main\aidl\com\
+* app\src\main\aidl\com\tribewire\
+* app\src\main\aidl\com\tribewire\app\
+* app\src\main\aidl\com\tribewire\app\MessageCollectorListener.aidl
+* app\src\main\aidl\com\tribewire\app\MessageSearchResult.aidl
+* app\src\main\aidl\com\tribewire\app\TribMessageCollectorapi.aidl
+* app\src\main\assets\
+* app\src\main\assets\fonts\
+* app\src\main\assets\fonts\ArialBold.ttf
+* app\src\main\assets\fonts\Helvetica.ttf
+* app\src\main\assets\fonts\arial.ttf
+* app\src\main\assets\fonts\helveticabold.ttf
+* app\src\main\java\
+* app\src\main\java\com\
+* app\src\main\java\com\app\
+* app\src\main\java\com\app\eyesay\
+* app\src\main\java\com\app\eyesay\custommenu\
+* app\src\main\java\com\app\eyesay\custommenu\CustomMenu.java
+* app\src\main\java\com\app\eyesay\dialog\
+* app\src\main\java\com\app\eyesay\dialog\EyesayonWayDialog.java
+* app\src\main\java\com\app\eyesay\widget\
+* app\src\main\java\com\app\eyesay\widget\PullToRefreshListView.java
+* app\src\main\java\com\ebooklibrary\
+* app\src\main\java\com\ebooklibrary\slideoutmenu\
+* app\src\main\java\com\ebooklibrary\slideoutmenu\CollapseAnimation.java
+* app\src\main\java\com\ebooklibrary\slideoutmenu\ExpandAnimation.java
+* app\src\main\java\com\eyesayapp\
+* app\src\main\java\com\eyesayapp\Utils\
+* app\src\main\java\com\eyesayapp\Utils\ActivityObj.java
+* app\src\main\java\com\eyesayapp\Utils\ActivityStatus.java
+* app\src\main\java\com\eyesayapp\Utils\Base64.java
+* app\src\main\java\com\eyesayapp\Utils\Base64Coder.java
+* app\src\main\java\com\eyesayapp\Utils\CommonFunctions.java
+* app\src\main\java\com\eyesayapp\Utils\Constants.java
+* app\src\main\java\com\eyesayapp\Utils\DataBase.java
+* app\src\main\java\com\eyesayapp\Utils\Debugger.java
+* app\src\main\java\com\eyesayapp\Utils\ExtAudioRecorder.java
+* app\src\main\java\com\eyesayapp\Utils\GroupMemberService.java
+* app\src\main\java\com\eyesayapp\Utils\GroupModel.java
+* app\src\main\java\com\eyesayapp\Utils\HttpFileUploader.java
+* app\src\main\java\com\eyesayapp\Utils\ImageDownloader.java
+* app\src\main\java\com\eyesayapp\Utils\ImageDownloader1.java
+* app\src\main\java\com\eyesayapp\Utils\InValidResponseException.java
+* app\src\main\java\com\eyesayapp\Utils\LocalImageDownloader.java
+* app\src\main\java\com\eyesayapp\Utils\MessageSearch.java
+* app\src\main\java\com\eyesayapp\Utils\NoInternetConnectionException.java
+* app\src\main\java\com\eyesayapp\Utils\OnSwipeTouchListener.java
+* app\src\main\java\com\eyesayapp\Utils\StorageImageDownloader.java
+* app\src\main\java\com\eyesayapp\Utils\StringMatcher.java
+* app\src\main\java\com\eyesayapp\Utils\SyncAddressBook.java
+* app\src\main\java\com\eyesayapp\Utils\TribeWireConstants.java
+* app\src\main\java\com\eyesayapp\Utils\TribeWireUtil.java
+* app\src\main\java\com\eyesayapp\Utils\TumblerUtils.java
+* app\src\main\java\com\eyesayapp\Utils\UploadFiles.java
+* app\src\main\java\com\eyesayapp\Utils\Utils.java
+* app\src\main\java\com\eyesayapp\Utils\XMLRequestBuilder.java
+* app\src\main\java\com\eyesayapp\Utils\YoutubeUtils.java
+* app\src\main\java\com\eyesayapp\alphabetlist\
+* app\src\main\java\com\eyesayapp\alphabetlist\IndexScroller.java
+* app\src\main\java\com\eyesayapp\alphabetlist\IndexableListView.java
+* app\src\main\java\com\eyesayapp\alphabetlist\PinnedHeaderListView.java
+* app\src\main\java\com\eyesayapp\asyn\
+* app\src\main\java\com\eyesayapp\asyn\CheckUserCrentials.java
+* app\src\main\java\com\eyesayapp\asyn\CompanyFyiInbox.java
+* app\src\main\java\com\eyesayapp\asyn\ContactSync.java
+* app\src\main\java\com\eyesayapp\asyn\GetGroupList.java
+* app\src\main\java\com\eyesayapp\asyn\GroupAsyn.java
+* app\src\main\java\com\eyesayapp\asyn\IContactResult.java
+* app\src\main\java\com\eyesayapp\asyn\IHttpRequest.java
+* app\src\main\java\com\eyesayapp\asyn\IInbox.java
+* app\src\main\java\com\eyesayapp\asyn\ISendFailedMessage.java
+* app\src\main\java\com\eyesayapp\asyn\ISentChatMessage.java
+* app\src\main\java\com\eyesayapp\asyn\InBoxList.java
+* app\src\main\java\com\eyesayapp\asyn\RestApiCall.java
+* app\src\main\java\com\eyesayapp\asyn\SendFailedMessage.java
+* app\src\main\java\com\eyesayapp\asyn\SignOut.java
+* app\src\main\java\com\eyesayapp\model\
+* app\src\main\java\com\eyesayapp\model\Badge.java
+* app\src\main\java\com\eyesayapp\model\CompanyMessages.java
+* app\src\main\java\com\eyesayapp\model\ContactList.java
+* app\src\main\java\com\eyesayapp\model\FriendModel.java
+* app\src\main\java\com\eyesayapp\model\MessageModel.java
+* app\src\main\java\com\eyesayapp\model\NavDrawerItem.java
+* app\src\main\java\com\eyesayapp\model\SectionHeader.java
+* app\src\main\java\com\eyesayapp\service\
+* app\src\main\java\com\eyesayapp\service\TribMessageCollectorService.java
+* app\src\main\java\com\tribewire\
+* app\src\main\java\com\tribewire\app\
+* app\src\main\java\com\tribewire\app\AddEditGroupMembers.java
+* app\src\main\java\com\tribewire\app\AddEditImage.java
+* app\src\main\java\com\tribewire\app\AddGroup.java
+* app\src\main\java\com\tribewire\app\AddParticipants.java
+* app\src\main\java\com\tribewire\app\AllGroups.java
+* app\src\main\java\com\tribewire\app\CompanyFYI.java
+* app\src\main\java\com\tribewire\app\CompanyFyiReply.java
+* app\src\main\java\com\tribewire\app\ComposeFyi.java
+* app\src\main\java\com\tribewire\app\ContactListSelection.java
+* app\src\main\java\com\tribewire\app\ConversationMessages.java
+* app\src\main\java\com\tribewire\app\DemoActivity.java
+* app\src\main\java\com\tribewire\app\Emergency.java
+* app\src\main\java\com\tribewire\app\EyeSayDefaultMessage.java
+* app\src\main\java\com\tribewire\app\EyesayBroadCast.java
+* app\src\main\java\com\tribewire\app\EyesayPlayAudio.java
+* app\src\main\java\com\tribewire\app\EyesayPlayMedia.java
+* app\src\main\java\com\tribewire\app\EyesaySendText.java
+* app\src\main\java\com\tribewire\app\EyesayTextImage.java
+* app\src\main\java\com\tribewire\app\FrameActivity.java
+* app\src\main\java\com\tribewire\app\GcmBroadcastReceiver.java
+* app\src\main\java\com\tribewire\app\GcmIntentService.java
+* app\src\main\java\com\tribewire\app\GroupListSelection.java
+* app\src\main\java\com\tribewire\app\GroupMembers.java
+* app\src\main\java\com\tribewire\app\Login.java
+* app\src\main\java\com\tribewire\app\MenuActivity.java
+* app\src\main\java\com\tribewire\app\MessageReceiver.java
+* app\src\main\java\com\tribewire\app\MessageSearchResult.java
+* app\src\main\java\com\tribewire\app\Splash.java
+* app\src\main\java\com\tribewire\app\TenFourConversations.java
+* app\src\main\java\com\tribewire\app\TenFourRecordVoice.java
+* app\src\main\java\com\tribewire\app\TenFourVideoJellyBeanTwo.java
+* app\src\main\java\com\tribewire\app\TestFrangment.java
+* app\src\main\java\eyesay\
+* app\src\main\java\eyesay\adapter\
+* app\src\main\java\eyesay\adapter\AddGroupAdapter.java
+* app\src\main\java\eyesay\adapter\AddParticipantAdp.java
+* app\src\main\java\eyesay\adapter\CompanyFyiAdapter.java
+* app\src\main\java\eyesay\adapter\ContactAdapter.java
+* app\src\main\java\eyesay\adapter\ContactListAdapter1.java
+* app\src\main\java\eyesay\adapter\ConversationAdapterNew.java
+* app\src\main\java\eyesay\adapter\GroupMemberAdapter.java
+* app\src\main\java\eyesay\adapter\GroupsAdapter.java
+* app\src\main\java\eyesay\adapter\MessageFolderAdapter.java
+* app\src\main\java\eyesay\adapter\MultiAutoAdapter.java
+* app\src\main\java\eyesay\adapter\NavDrawerListAdapter.java
+* app\src\main\java\eyesay\adapter\SimpleAdapter.java
+* app\src\main\java\eyesay\obj\
+* app\src\main\java\eyesay\obj\Friend.java
+* app\src\main\java\eyesay\obj\STATUS.java
+* app\src\main\java\eyesay\parser\
+* app\src\main\java\eyesay\parser\FriendsAdapter.java
+* app\src\main\java\eyesay\parser\FriendsParser.java
+* app\src\main\java\eyesay\parser\GroupMemberAdapter.java
+* app\src\main\java\eyesay\parser\TenFourMessageXML.java
+* app\src\main\java\eyesay\parser\TenFourParser.java
+* app\src\main\res\
+* app\src\main\res\anim\
+* app\src\main\res\anim\menu_animation_in.xml
+* app\src\main\res\anim\menu_animation_out.xml
+* app\src\main\res\anim\slide_left_in.xml
+* app\src\main\res\anim\slide_left_out.xml
+* app\src\main\res\anim\slide_right_in.xml
+* app\src\main\res\anim\slide_right_out.xml
+* app\src\main\res\anim\swipeleft.xml
+* app\src\main\res\anim\swiperight.xml
+* app\src\main\res\drawable-hdpi\
+* app\src\main\res\drawable-hdpi\add_contacts_24x24.png
+* app\src\main\res\drawable-hdpi\add_contacts_30x30.png
+* app\src\main\res\drawable-hdpi\add_profile_img_100x100.png
+* app\src\main\res\drawable-hdpi\add_recipients.png
+* app\src\main\res\drawable-hdpi\alert.png
+* app\src\main\res\drawable-hdpi\allconversations_50x50.png
+* app\src\main\res\drawable-hdpi\app_logo.png
+* app\src\main\res\drawable-hdpi\arrow_next_24x24.png
+* app\src\main\res\drawable-hdpi\attachment.png
+* app\src\main\res\drawable-hdpi\audioattachment.png
+* app\src\main\res\drawable-hdpi\audiorecordingbg.png
+* app\src\main\res\drawable-hdpi\available.png
+* app\src\main\res\drawable-hdpi\back_arrow_30x30.png
+* app\src\main\res\drawable-hdpi\back_arrow_40x40.png
+* app\src\main\res\drawable-hdpi\back_arrow_75x45.png
+* app\src\main\res\drawable-hdpi\back_arrow_85x60.png
+* app\src\main\res\drawable-hdpi\badge_10x10.png
+* app\src\main\res\drawable-hdpi\badge_15x15.png
+* app\src\main\res\drawable-hdpi\badge_30x30new.png
+* app\src\main\res\drawable-hdpi\badged_30x30.png
+* app\src\main\res\drawable-hdpi\blue_bar.jpg
+* app\src\main\res\drawable-hdpi\bluex.png
+* app\src\main\res\drawable-hdpi\btn_sign_in_250x30px.png
+* app\src\main\res\drawable-hdpi\btn_sign_in_500x60px.png
+* app\src\main\res\drawable-hdpi\button_back.png
+* app\src\main\res\drawable-hdpi\button_back_to_tiles.png
+* app\src\main\res\drawable-hdpi\button_cancel.png
+* app\src\main\res\drawable-hdpi\button_contact_topbar_active1.png
+* app\src\main\res\drawable-hdpi\button_contact_topbar_inactive.png
+* app\src\main\res\drawable-hdpi\button_done.png
+* app\src\main\res\drawable-hdpi\button_groups_active1.png
+* app\src\main\res\drawable-hdpi\button_groups_inactive.png
+* app\src\main\res\drawable-hdpi\button_play_inactive.png
+* app\src\main\res\drawable-hdpi\button_record_active.png
+* app\src\main\res\drawable-hdpi\button_record_inactive.png
+* app\src\main\res\drawable-hdpi\button_save.png
+* app\src\main\res\drawable-hdpi\button_sharetocontacts_active.png
+* app\src\main\res\drawable-hdpi\button_sharetocontacts_inactive.png
+* app\src\main\res\drawable-hdpi\button_sharetogroups_active.png
+* app\src\main\res\drawable-hdpi\button_sharetogroups_inactive.png
+* app\src\main\res\drawable-hdpi\cancel_blue.png
+* app\src\main\res\drawable-hdpi\cancel_btn_24x24.png
+* app\src\main\res\drawable-hdpi\cancel_f.png
+* app\src\main\res\drawable-hdpi\cancel_n.png
+* app\src\main\res\drawable-hdpi\cancel_silver.png
+* app\src\main\res\drawable-hdpi\contact_a.png
+* app\src\main\res\drawable-hdpi\contact_b.png
+* app\src\main\res\drawable-hdpi\contact_i.png
+* app\src\main\res\drawable-hdpi\contacts_50x50.png
+* app\src\main\res\drawable-hdpi\conversation_bubble_blue.9.png
+* app\src\main\res\drawable-hdpi\conversation_bubble_gray.9.png
+* app\src\main\res\drawable-hdpi\conversationgray.9.png
+* app\src\main\res\drawable-hdpi\current_conversation_listeners_30x30.png
+* app\src\main\res\drawable-hdpi\current_conversation_listeners_40x40.png
+* app\src\main\res\drawable-hdpi\drawer_30x30.png
+* app\src\main\res\drawable-hdpi\drawer_allconversations_80x80.png
+* app\src\main\res\drawable-hdpi\drawer_contacts_80x80.png
+* app\src\main\res\drawable-hdpi\drawer_emergency_new_80x80.png
+* app\src\main\res\drawable-hdpi\drawer_fyis_80x80.png
+* app\src\main\res\drawable-hdpi\emergency_msg_50x50.png
+* app\src\main\res\drawable-hdpi\emergency_msg_read_100x100.png
+* app\src\main\res\drawable-hdpi\emergency_msg_unread_100x100.png
+* app\src\main\res\drawable-hdpi\emergency_new_50x50.png
+* app\src\main\res\drawable-hdpi\eyesay_icon.png
+* app\src\main\res\drawable-hdpi\eyesaymsgicon.png
+* app\src\main\res\drawable-hdpi\failedmessage.png
+* app\src\main\res\drawable-hdpi\fyi_read_60x60.png
+* app\src\main\res\drawable-hdpi\fyi_unread_30x30.png
+* app\src\main\res\drawable-hdpi\fyi_unread_60x60.png
+* app\src\main\res\drawable-hdpi\graphic_messagesent.png
+* app\src\main\res\drawable-hdpi\group.png
+* app\src\main\res\drawable-hdpi\group_40x40.png
+* app\src\main\res\drawable-hdpi\group_arrow_next_24x24.png
+* app\src\main\res\drawable-hdpi\groupbgwtext.png
+* app\src\main\res\drawable-hdpi\groups_30x30.png
+* app\src\main\res\drawable-hdpi\ic_launcher.png
+* app\src\main\res\drawable-hdpi\icons_add_media.png
+* app\src\main\res\drawable-hdpi\icons_status_offline.png
+* app\src\main\res\drawable-hdpi\icons_status_online.png
+* app\src\main\res\drawable-hdpi\image_placeholder.png
+* app\src\main\res\drawable-hdpi\in_the_conversation_40x40.png
+* app\src\main\res\drawable-hdpi\list_divider.png
+* app\src\main\res\drawable-hdpi\loginbg.png
+* app\src\main\res\drawable-hdpi\logo.png
+* app\src\main\res\drawable-hdpi\menu_middle.gif
+* app\src\main\res\drawable-hdpi\menuiconnew.gif
+* app\src\main\res\drawable-hdpi\menutop.gif
+* app\src\main\res\drawable-hdpi\messagebluearrow.png
+* app\src\main\res\drawable-hdpi\new_conversation_30x30.png
+* app\src\main\res\drawable-hdpi\new_conversation_40x40.png
+* app\src\main\res\drawable-hdpi\no_image.png
+* app\src\main\res\drawable-hdpi\offline.png
+* app\src\main\res\drawable-hdpi\password_image.png
+* app\src\main\res\drawable-hdpi\plus.png
+* app\src\main\res\drawable-hdpi\ptr_pulltorefresh_arrow.png
+* app\src\main\res\drawable-hdpi\record_btn_off.png
+* app\src\main\res\drawable-hdpi\record_btn_on.png
+* app\src\main\res\drawable-hdpi\retakeblue.png
+* app\src\main\res\drawable-hdpi\retakesilver.png
+* app\src\main\res\drawable-hdpi\rightarrow.png
+* app\src\main\res\drawable-hdpi\search.gif
+* app\src\main\res\drawable-hdpi\search_30x30.png
+* app\src\main\res\drawable-hdpi\search_40x40.png
+* app\src\main\res\drawable-hdpi\send_blue.png
+* app\src\main\res\drawable-hdpi\send_silver.png
+* app\src\main\res\drawable-hdpi\silver_bar.jpg
+* app\src\main\res\drawable-hdpi\submit.png
+* app\src\main\res\drawable-hdpi\tab_group_n.png
+* app\src\main\res\drawable-hdpi\tapsingleormultiple.png
+* app\src\main\res\drawable-hdpi\unavailable.png
+* app\src\main\res\drawable-hdpi\useblue.png
+* app\src\main\res\drawable-hdpi\user_pass_field.png
+* app\src\main\res\drawable-hdpi\username_image.png
+* app\src\main\res\drawable-hdpi\usesilver.png
+* app\src\main\res\drawable-hdpi\videopause.png
+* app\src\main\res\drawable-hdpi\videoplay.png
+* app\src\main\res\drawable-hdpi\videosmalliconin.png
+* app\src\main\res\drawable-mdpi\
+* app\src\main\res\drawable-mdpi\ic_launcher.png
+* app\src\main\res\drawable-xhdpi\
+* app\src\main\res\drawable-xhdpi\all_emergency_locations.png
+* app\src\main\res\drawable-xhdpi\attachment.png
+* app\src\main\res\drawable-xhdpi\back_arrow_40x40.png
+* app\src\main\res\drawable-xhdpi\ic_launcher.png
+* app\src\main\res\drawable-xxhdpi\
+* app\src\main\res\drawable-xxhdpi\all_emergency_locations.png
+* app\src\main\res\drawable-xxhdpi\ic_launcher.png
+* app\src\main\res\drawable\
+* app\src\main\res\drawable\add_recipients.png
+* app\src\main\res\drawable\btn_cancel.xml
+* app\src\main\res\drawable\btn_cont_topbar.xml
+* app\src\main\res\drawable\btn_corner.xml
+* app\src\main\res\drawable\btn_get_start_vd.xml
+* app\src\main\res\drawable\btn_group1.xml
+* app\src\main\res\drawable\btn_multiple_contact_selector.xml
+* app\src\main\res\drawable\btn_send_message.xml
+* app\src\main\res\drawable\btn_single_contact_selector.xml
+* app\src\main\res\drawable\cancel.xml
+* app\src\main\res\drawable\edit_text_round.xml
+* app\src\main\res\drawable\menu_button_black.xml
+* app\src\main\res\drawable\menu_header.xml
+* app\src\main\res\drawable\retake.xml
+* app\src\main\res\drawable\send.xml
+* app\src\main\res\drawable\use.xml
+* app\src\main\res\layout\
+* app\src\main\res\layout\activity_add_group.xml
+* app\src\main\res\layout\activity_addedit_image.xml
+* app\src\main\res\layout\activity_all_group.xml
+* app\src\main\res\layout\activity_company_message.xml
+* app\src\main\res\layout\activity_companyfyi.xml
+* app\src\main\res\layout\activity_compose_fyi.xml
+* app\src\main\res\layout\activity_conversation.xml
+* app\src\main\res\layout\activity_emergency.xml
+* app\src\main\res\layout\activity_group_memeber.xml
+* app\src\main\res\layout\activity_login.xml
+* app\src\main\res\layout\activity_menu.xml
+* app\src\main\res\layout\activity_send_text_message.xml
+* app\src\main\res\layout\activity_splash.xml
+* app\src\main\res\layout\addparticpant_header.xml
+* app\src\main\res\layout\alert_cont_group.xml
+* app\src\main\res\layout\contacts.xml
+* app\src\main\res\layout\contacts_list_selection.xml
+* app\src\main\res\layout\custom_layout.xml
+* app\src\main\res\layout\custom_menu.xml
+* app\src\main\res\layout\custom_menu_item.xml
+* app\src\main\res\layout\eyesay_onway.xml
+* app\src\main\res\layout\eyesayplayaudio.xml
+* app\src\main\res\layout\eyesaytextimage.xml
+* app\src\main\res\layout\friendlist.xml
+* app\src\main\res\layout\group_contact_framelayout.xml
+* app\src\main\res\layout\group_list_selection.xml
+* app\src\main\res\layout\group_member.xml
+* app\src\main\res\layout\list_item_companyfy.xml
+* app\src\main\res\layout\list_item_conversation.xml
+* app\src\main\res\layout\list_item_menu.xml
+* app\src\main\res\layout\listitem_all_groups.xml
+* app\src\main\res\layout\message_folder_list_item.xml
+* app\src\main\res\layout\message_folderlist.xml
+* app\src\main\res\layout\messagelist.xml
+* app\src\main\res\layout\msgreceivernew.xml
+* app\src\main\res\layout\msgsendnew.xml
+* app\src\main\res\layout\playaudio.xml
+* app\src\main\res\layout\playmedia.xml
+* app\src\main\res\layout\ptr_header.xml
+* app\src\main\res\layout\recordvoice.xml
+* app\src\main\res\layout\slidingpanel.xml
+* app\src\main\res\menu\
+* app\src\main\res\menu\main_menu.xml
+* app\src\main\res\menu\menu_companyfyi.xml
+* app\src\main\res\menu\menu_contacts.xml
+* app\src\main\res\menu\splash.xml
+* app\src\main\res\values-sw600dp\
+* app\src\main\res\values-sw600dp\dimens.xml
+* app\src\main\res\values-sw720dp-land\
+* app\src\main\res\values-sw720dp-land\dimens.xml
+* app\src\main\res\values-v11\
+* app\src\main\res\values-v11\styles.xml
+* app\src\main\res\values-v14\
+* app\src\main\res\values-v14\styles.xml
+* app\src\main\res\values\
+* app\src\main\res\values\colors.xml
+* app\src\main\res\values\dimens.xml
+* app\src\main\res\values\ptr_default_style.xml
+* app\src\main\res\values\strings.xml
+* app\src\main\res\values\styles.xml
+* app\src\main\res\xml\
+* app\src\main\res\xml\progress.xml
+* build.gradle
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* ic_launcher-web.png
+* proguard-project.txt
+* settings.gradle
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+GooglePlay => [com.google.android.gms:play-services:+]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\aws-android-sdk-1.4.0-debug.jar => app\libs\aws-android-sdk-1.4.0-debug.jar
+* libs\commons-httpclient.jar => app\libs\commons-httpclient.jar
+* libs\commons-lang3-3.3.2.jar => app\libs\commons-lang3-3.3.2.jar
+* libs\coremedia.jar => app\libs\coremedia.jar
+* libs\httpmime-4.2.1.jar => app\libs\httpmime-4.2.1.jar
+* libs\picasso-2.0.2.jar => app\libs\picasso-2.0.2.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\com\tribewire\app\MessageCollectorListener.aidl => app\src\main\aidl\com\tribewire\app\MessageCollectorListener.aidl
+* src\com\tribewire\app\MessageSearchResult.aidl => app\src\main\aidl\com\tribewire\app\MessageSearchResult.aidl
+* src\com\tribewire\app\TribMessageCollectorapi.aidl => app\src\main\aidl\com\tribewire\app\TribMessageCollectorapi.aidl
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="H:\Tribewire\app\libs\coremedia.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6fdc6f8fe508581151d84fc6bdda7a0cb8c0c941">
+        <dex dex="H:\Tribewire\app\build\intermediates\pre-dexed\debug\coremedia-3b97732b9761c9a5fed14b574b78999fb9eec94e.jar" />
+    </item>
+    <item
+        jar="H:\Tribewire\app\libs\picasso-2.0.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a2a5f1b48f767862d74017c1bef02ff611215210">
+        <dex dex="H:\Tribewire\app\build\intermediates\pre-dexed\debug\picasso-2.0.2-d43b83acd22fc5b5edd29566f73c42ed8b658e4a.jar" />
+    </item>
+    <item
+        jar="D:\andriod-sdk\android-sdk-windows-1.6_r1\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="H:\Tribewire\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-9ac1dd68f9c1d0741bb55c6de9906efeb43b44ab.jar" />
+    </item>
+    <item
+        jar="H:\Tribewire\app\libs\httpmime-4.2.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="c7349b04e5d76895fdfc0f38bdc0699e5f6fef5a">
+        <dex dex="H:\Tribewire\app\build\intermediates\pre-dexed\debug\httpmime-4.2.1-6b0d979fe6aca3fbc7ae73704d0f866e2c48c774.jar" />
+    </item>
+    <item
+        jar="H:\Tribewire\app\libs\commons-lang3-3.3.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="659861b4acde07a0527211e40d256119face1d15">
+        <dex dex="H:\Tribewire\app\build\intermediates\pre-dexed\debug\commons-lang3-3.3.2-92bda6c241b3aa77de53ee70d161e343bb34e333.jar" />
+    </item>
+    <item
+        jar="H:\Tribewire\app\libs\aws-android-sdk-1.4.0-debug.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e32dcadb26ac611ccd940c2a961e495f7505d126">
+        <dex dex="H:\Tribewire\app\build\intermediates\pre-dexed\debug\aws-android-sdk-1.4.0-debug-2b97da1908166ca6c01280c8dc18d346b7fecbae.jar" />
+    </item>
+    <item
+        jar="H:\Tribewire\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\5.2.08\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1ed7a7a05185651f9af41ad93711cb96b66f331c">
+        <dex dex="H:\Tribewire\app\build\intermediates\pre-dexed\debug\classes-ed3f2b20f9cb59fcd5eff9c01faab98dbb14605a.jar" />
+    </item>
+    <item
+        jar="H:\Tribewire\app\libs\commons-httpclient.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="7ee51a869dab311e6cdc789e98bb29d302f704d3">
+        <dex dex="H:\Tribewire\app\build\intermediates\pre-dexed\debug\commons-httpclient-1b8efd746739f508b91cd83adff1749e36f3269e.jar" />
+    </item>
+
+</items>

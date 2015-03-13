@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/nav_allconversation" >
+
+        <Button
+            android:id="@+id/text_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_arrow_40x40"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:scrollHorizontally="true"
+            android:text="@string/new_eyesay"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/text_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/cancel"
+            android:gravity="right"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white" >
+<TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/tribewire_black"
+            />
+        <MultiAutoCompleteTextView
+            android:id="@+id/contactNames"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:completionThreshold="1"
+            android:hint=" Add Contact(s) and or group(s)"
+            android:paddingLeft="10dp"
+            android:scrollHorizontally="true"
+            android:background="@drawable/edit_text_round"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/add_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/add_contacts_24x24"
+            android:gravity="right|center_vertical" />
+    </LinearLayout>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_shade" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_capture"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_audio"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@color/tribewire_grey"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_audio_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/videoplay" />
+
+            <ProgressBar
+                android:id="@+id/progressBarAudio"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_audio_message" />
+
+            <TextView
+                android:id="@+id/audio_seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_audio_message"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="00:00"
+                android:textColor="@color/tribewire_black"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/eyesay_txt_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/send_bar_grey" >
+
+            <ImageButton
+                android:id="@+id/open_media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/attachment"
+                android:gravity="right" />
+
+            <Button
+                android:id="@+id/text_send"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_send_message"
+                android:text="Send"
+                android:padding="7dp"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/msg_editText1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/text_send"
+                android:layout_toRightOf="@id/open_media"
+                android:background="@drawable/edit_text_round"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/tribewire_black" >
+
+                <requestFocus android:layout_width="match_parent" />
+            </EditText>
+        </RelativeLayout>
+        <LinearLayout
+        android:id="@+id/con_audio_recording"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/eyesay_txt_camera"
+        android:background="@color/black"
+        android:padding="1dp"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white" >
+
+            <Button
+                android:id="@+id/btn_record"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/record_btn_off"
+                android:textColor="@color/blue"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/btn_record"
+                android:background="@drawable/videoplay"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/second_played"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="15dp"
+                android:text="00:00"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBarRecord"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@id/second_played"
+                android:layout_toRightOf="@+id/btn_play" />
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/btn_stop" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@+id/secondleft" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- android:layout_toLeftOf="@id/btn_record" -->
+            <!-- android:text="Stop" -->
+            <!-- android:textColor="@color/gray" -->
+            <!-- android:textSize="18dp" /> -->
+
+            <Button
+                android:id="@+id/txt_cancel"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cancel_btn_24x24" />
+        </RelativeLayout>
+    </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>
